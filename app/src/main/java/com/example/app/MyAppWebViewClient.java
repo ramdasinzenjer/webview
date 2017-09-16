@@ -12,6 +12,7 @@ public class MyAppWebViewClient extends WebViewClient {
         if (Uri.parse(url).getHost().endsWith("www.inzenjer.somee.com")) {
             return false;
         }
+        //https://slymax.com/webview/
 
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
         view.getContext().startActivity(intent);
